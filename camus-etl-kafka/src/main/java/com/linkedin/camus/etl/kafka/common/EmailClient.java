@@ -54,7 +54,7 @@ public class EmailClient {
     }
     subjectLine = properties.getProperty("alert.email.subject", "Camus topic falling behind alert");
     senderEmail = properties.getProperty("alert.email.sender", "camus@linkedin.com");
-    shouldSendEmail = properties.getProperty("alert.on.topic.falling.behind", "true").equalsIgnoreCase("true");
+    shouldSendEmail = false;
   }
 
   public static void sendEmail(String content) {

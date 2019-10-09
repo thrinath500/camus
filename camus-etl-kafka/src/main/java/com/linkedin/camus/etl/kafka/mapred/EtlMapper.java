@@ -23,7 +23,7 @@ public class EtlMapper extends Mapper<EtlKey, CamusWrapper, EtlKey, CamusWrapper
   public void map(EtlKey key, CamusWrapper val, Context context) throws IOException, InterruptedException {
     long startTime = System.currentTimeMillis();
 
-    context.write(key, val);
+//    context.write(key, val);
 
     long endTime = System.currentTimeMillis();
     long mapTime = ((endTime - startTime));
